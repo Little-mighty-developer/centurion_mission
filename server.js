@@ -1,10 +1,10 @@
+require('dotenv').config();
 const express = require('express');
 const axios = require('axios');
 const app = express();
 app.use(express.json());
 
-// TODO: Replace with your Hugging Face API key
-const HF_API_KEY = 'YOUR_HF_API_KEY';
+const HF_API_KEY = process.env.HF_API_KEY;
 
 app.post('/suggest-actions', async (req, res) => {
   const { goal } = req.body;
@@ -21,4 +21,4 @@ app.post('/suggest-actions', async (req, res) => {
   }
 });
 
-app.listen(3001, () => console.log('Proxy running on port 3001')); 
+app.listen(3001, () => console.log('Proxy running on port 3001'));
