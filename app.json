@@ -9,7 +9,8 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.anonymous.centurion-mission-tracker"
     },
     "android": {
       "adaptiveIcon": {
@@ -33,7 +34,9 @@
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
         }
-      ]
+      ],
+      "expo-build-properties",
+      "@morrowdigital/watermelondb-expo-plugin"
     ],
     "experiments": {
       "typedRoutes": true

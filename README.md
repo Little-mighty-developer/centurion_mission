@@ -48,3 +48,14 @@ Join our community of developers creating universal apps.
 
 - [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
 - [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+
+## WatermelonDB Setup
+
+This project uses [WatermelonDB](https://watermelondb.dev/) for offline-first, high-performance local database storage. All database schema and models are located in the `db/` directory.
+
+- `db/schema.ts`: WatermelonDB schema definition
+- `db/models/`: WatermelonDB model classes (e.g., Mission, Action, ActionLog)
+
+See the code in those files for details on the data structure.
+
+> Note: The `db/` directory will be created if it does not exist yet.
